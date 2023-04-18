@@ -4,8 +4,11 @@ namespace App\Entity;
 
 use App\Repository\TypeRepository;
 use Doctrine\ORM\Mapping as ORM;
+use ApiPlatform\Metadata\ApiResource;
+
 
 #[ORM\Entity(repositoryClass: TypeRepository::class)]
+#[ApiResource]
 class Type
 {
     #[ORM\Id]
