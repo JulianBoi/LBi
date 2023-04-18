@@ -2,3 +2,7 @@ api_platform:
     resource: .
     type: api_platform
     prefix: /api
+    defaults:
+        pagination_enabled: true
+        pagination_items_per_page: 30
+        pagination_maximum_items_per_page: 50
